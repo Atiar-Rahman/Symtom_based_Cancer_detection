@@ -60,6 +60,7 @@ class CancerDetectionForm(forms.Form):
         choices=[
             ('Infiltrating Ductal Carcinoma', 'Infiltrating Ductal Carcinoma'),
             ('Mucinous Carcinoma', 'Mucinous Carcinoma'),
+            ('Infiltrating Lobular Carcinoma','Infiltrating Lobular Carcinoma')
         ],
         widget=forms.Select(attrs={
             "class": "w-full border border-gray-300 rounded-md px-6 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-rose-500"
