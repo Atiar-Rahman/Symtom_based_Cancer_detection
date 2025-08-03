@@ -5,8 +5,9 @@ class CancerDetectionForm(forms.Form):
     age = forms.FloatField(
         label="Age",
         min_value=0,
+        max_value=120,
         widget=forms.NumberInput(attrs={
-            "placeholder": "Enter your age",
+            "placeholder": "Enter your age: e.g., 45",
             "class": "w-full border border-gray-300 rounded-md px-6 py-2 focus:outline-none focus:ring-2 focus:ring-rose-500"
         })
     )
@@ -22,28 +23,28 @@ class CancerDetectionForm(forms.Form):
     protein1 = forms.FloatField(
         label="Protein1",
         widget=forms.NumberInput(attrs={
-            "placeholder": "Enter Protein1",
+            "placeholder": "Enter Protein1: e.g., 15.4 (ng/mL)",
             "class": "w-full border border-gray-300 rounded-md px-6 py-2 focus:outline-none focus:ring-2 focus:ring-rose-500"
         })
     )
     protein2 = forms.FloatField(
         label="Protein2",
         widget=forms.NumberInput(attrs={
-            "placeholder": "Enter Protein2",
+            "placeholder": "Enter Protein2: e.g., 8.2 (ng/mL)",
             "class": "w-full border border-gray-300 rounded-md px-6 py-2 focus:outline-none focus:ring-2 focus:ring-rose-500"
         })
     )
     protein3 = forms.FloatField(
         label="Protein3",
         widget=forms.NumberInput(attrs={
-            "placeholder": "Enter Protein3",
+            "placeholder": "Enter Protein3: e.g., 21.0 (ng/mL)",
             "class": "w-full border border-gray-300 rounded-md px-6 py-2 focus:outline-none focus:ring-2 focus:ring-rose-500"
         })
     )
     protein4 = forms.FloatField(
         label="Protein4",
         widget=forms.NumberInput(attrs={
-            "placeholder": "Enter Protein4",
+            "placeholder": "Enter Protein4: e.g., 5.6 (ng/mL)",
             "class": "w-full border border-gray-300 rounded-md px-6 py-2 focus:outline-none focus:ring-2 focus:ring-rose-500"
         })
     )
@@ -91,56 +92,56 @@ class CancerDetectionForm(forms.Form):
     total_bilirubin = forms.FloatField(
         required=False,
         widget=forms.NumberInput(attrs={
-            "placeholder": "Total Bilirubin",
+            "placeholder": "Total Bilirubin: e.g., 1.2 (mg/dL)",
             "class": "w-full border border-gray-300 rounded-md px-6 py-2 focus:outline-none focus:ring-2 focus:ring-rose-500"
         })
     )
     direct_bilirubin = forms.FloatField(
         required=False,
         widget=forms.NumberInput(attrs={
-            "placeholder": "Direct Bilirubin",
+            "placeholder": "Direct Bilirubin: e.g., 0.3 (mg/dL)",
             "class": "w-full border border-gray-300 rounded-md px-6 py-2 focus:outline-none focus:ring-2 focus:ring-rose-500"
         })
     )
     alkaline_phosphotase = forms.FloatField(
         required=False,
         widget=forms.NumberInput(attrs={
-            "placeholder": "Alkaline Phosphotase",
+            "placeholder": "Alkaline Phosphotase: e.g., 100-300 (U/L)",
             "class": "w-full border border-gray-300 rounded-md px-6 py-2 focus:outline-none focus:ring-2 focus:ring-rose-500"
         })
     )
     alamine_aminotransferase = forms.FloatField(
         required=False,
         widget=forms.NumberInput(attrs={
-            "placeholder": "Alamine Aminotransferase",
+            "placeholder": "Alamine Aminotransferase: e.g., 7-56 (U/L)",
             "class": "w-full border border-gray-300 rounded-md px-6 py-2 focus:outline-none focus:ring-2 focus:ring-rose-500"
         })
     )
     aspartate_aminotransferase = forms.FloatField(
         required=False,
         widget=forms.NumberInput(attrs={
-            "placeholder": "Aspartate Aminotransferase",
+            "placeholder": "Aspartate Aminotransferase: e.g., 10-40 (U/L)",
             "class": "w-full border border-gray-300 rounded-md px-6 py-2 focus:outline-none focus:ring-2 focus:ring-rose-500"
         })
     )
     total_proteins = forms.FloatField(
         required=False,
         widget=forms.NumberInput(attrs={
-            "placeholder": "Total Proteins",
+            "placeholder": "Total Proteins: e.g., 6.0-8.3 (g/dL)",
             "class": "w-full border border-gray-300 rounded-md px-6 py-2 focus:outline-none focus:ring-2 focus:ring-rose-500"
         })
     )
     albumin = forms.FloatField(
         required=False,
         widget=forms.NumberInput(attrs={
-            "placeholder": "Albumin",
+            "placeholder": "Albumin: e.g., 3.4-5.4 (g/dL)",
             "class": "w-full border border-gray-300 rounded-md px-6 py-2 focus:outline-none focus:ring-2 focus:ring-rose-500"
         })
     )
     albumin_and_globulin_ratio = forms.FloatField(
         required=False,
         widget=forms.NumberInput(attrs={
-            "placeholder": "Albumin and Globulin Ratio",
+            "placeholder": "Albumin and Globulin Ratio: e.g., 1.1-2.5",
             "class": "w-full border border-gray-300 rounded-md px-6 py-2 focus:outline-none focus:ring-2 focus:ring-rose-500"
         })
     )
@@ -168,14 +169,14 @@ class CancerDetectionForm(forms.Form):
     bmi = forms.FloatField(
         required=False,
         widget=forms.NumberInput(attrs={
-            "placeholder": "BMI",
+            "placeholder": "BMI: e.g., 22.5 (kg/m²)",
             "class": "w-full border border-gray-300 rounded-md px-6 py-2 focus:outline-none focus:ring-2 focus:ring-rose-500"
         })
     )
     cholesterol_level = forms.FloatField(
         required=False,
         widget=forms.NumberInput(attrs={
-            "placeholder": "Cholesterol Level",
+            "placeholder": "Cholesterol Level:  e.g., 180 (mg/dL)",
             "class": "w-full border border-gray-300 rounded-md px-6 py-2 focus:outline-none focus:ring-2 focus:ring-rose-500"
         })
     )

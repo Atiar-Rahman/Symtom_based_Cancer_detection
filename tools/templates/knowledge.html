@@ -1,5 +1,150 @@
 {% extends "Home.html" %}
 
 {% block content %}
-    <h1>Show Cancer Knowledge</h1>
+    <div>
+        <section class="p-6 bg-gray-50 text-gray-800">
+            <div class="flex flex-col lg:flex-row gap-4">
+                <!-- Breast Cancer -->
+                <div class="bg-white shadow-md rounded-lg p-5 border-t-4 border-pink-500">
+                    <h2 class="text-xl font-bold text-pink-600 mb-3">Breast Cancer</h2>
+                    <p class="mb-2">Breast cancer occurs when cells in the breast grow abnormally, often starting in milk ducts or lobules.</p>
+                    <ul class="list-disc list-inside mb-2">
+                        <li><strong>Symptoms:</strong> Lump, nipple changes, redness</li>
+                        <li><strong>Risk Factors:</strong> Age, family history, hormones</li>
+                        <li><strong>Detection:</strong> Mammogram, biopsy</li>
+                    </ul>
+                </div>
+
+                <!-- Liver Cancer -->
+                <div class="bg-white shadow-md rounded-lg p-3 border-t-4 border-yellow-500">
+                    <h2 class="text-xl font-bold text-yellow-600 mb-3">Liver Cancer</h2>
+                    <p class="mb-2">Liver cancer begins in liver cells, often linked to hepatitis infections or cirrhosis from alcohol use.</p>
+                    <ul class="list-disc list-inside mb-2">
+                        <li><strong>Symptoms:</strong> Belly pain, weight loss, jaundice</li>
+                        <li><strong>Risk Factors:</strong> Hepatitis, alcohol, fatty liver</li>
+                        <li><strong>Detection:</strong> Blood test, ultrasound, CT scan</li>
+                    </ul>
+                </div>
+
+                <!-- Lung Cancer -->
+                <div class="bg-white shadow-md rounded-lg p-5 border-t-4 border-blue-500">
+                    <h2 class="text-xl font-bold text-blue-600 mb-3">Lung Cancer</h2>
+                    <p class="mb-2">Lung cancer is the uncontrolled growth of abnormal cells in the lungs, often caused by smoking.</p>
+                    <ul class="list-disc list-inside mb-2">
+                        <li><strong>Symptoms:</strong> Coughing blood, chest pain, shortness of breath</li>
+                        <li><strong>Risk Factors:</strong> Smoking, pollution, family history</li>
+                        <li><strong>Detection:</strong> Chest X-ray, CT, biopsy</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <div>
+        <div class="max-w-7xl mx-auto px-4 py-8">
+            <h2 class="text-2xl font-bold text-green-700 mb-4">Common Units in Medical Lab Tests</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white border border-gray-300 text-sm">
+                <thead class="bg-green-100 text-gray-700">
+                    <tr>
+                    <th class="py-2 px-4 border">Unit</th>
+                    <th class="py-2 px-4 border">Full Form</th>
+                    <th class="py-2 px-4 border">Meaning</th>
+                    <th class="py-2 px-4 border">Used For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-t">
+                    <td class="py-2 px-4 border">ng/mL</td>
+                    <td class="py-2 px-4 border">Nanograms per Milliliter</td>
+                    <td class="py-2 px-4 border">1 billionth of a gram per 1 mL</td>
+                    <td class="py-2 px-4 border">Hormones, Tumor Markers</td>
+                    </tr>
+                    <tr class="border-t">
+                    <td class="py-2 px-4 border">mg/dL</td>
+                    <td class="py-2 px-4 border">Milligrams per Deciliter</td>
+                    <td class="py-2 px-4 border">1 thousandth of a gram per 100 mL</td>
+                    <td class="py-2 px-4 border">Glucose, Cholesterol, Bilirubin</td>
+                    </tr>
+                    <tr class="border-t">
+                    <td class="py-2 px-4 border">g/dL</td>
+                    <td class="py-2 px-4 border">Grams per Deciliter</td>
+                    <td class="py-2 px-4 border">1 gram per 100 mL</td>
+                    <td class="py-2 px-4 border">Hemoglobin, Total Proteins</td>
+                    </tr>
+                    <tr class="border-t">
+                    <td class="py-2 px-4 border">U/L</td>
+                    <td class="py-2 px-4 border">Units per Liter</td>
+                    <td class="py-2 px-4 border">Enzyme activity per 1 L</td>
+                    <td class="py-2 px-4 border">Liver Enzymes (ALT, AST)</td>
+                    </tr>
+                    <tr class="border-t">
+                    <td class="py-2 px-4 border">mmol/L</td>
+                    <td class="py-2 px-4 border">Millimoles per Liter</td>
+                    <td class="py-2 px-4 border">Amount of substance per L</td>
+                    <td class="py-2 px-4 border">Glucose, Electrolytes</td>
+                    </tr>
+                    <tr class="border-t">
+                    <td class="py-2 px-4 border">kg/m²</td>
+                    <td class="py-2 px-4 border">Kilograms per Square Meter</td>
+                    <td class="py-2 px-4 border">Body mass index unit</td>
+                    <td class="py-2 px-4 border">BMI Calculation</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+
+            <h2 class="text-2xl font-bold text-green-700 mt-10 mb-4">Example Interpretations</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white border border-gray-300 text-sm">
+                <thead class="bg-green-100 text-gray-700">
+                    <tr>
+                    <th class="py-2 px-4 border">Test</th>
+                    <th class="py-2 px-4 border">Normal Range</th>
+                    <th class="py-2 px-4 border">Unit</th>
+                    <th class="py-2 px-4 border">Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-t">
+                    <td class="py-2 px-4 border">Total Bilirubin</td>
+                    <td class="py-2 px-4 border">0.1 – 1.2</td>
+                    <td class="py-2 px-4 border">mg/dL</td>
+                    <td class="py-2 px-4 border">Liver Function</td>
+                    </tr>
+                    <tr class="border-t">
+                    <td class="py-2 px-4 border">ALT / AST</td>
+                    <td class="py-2 px-4 border">7 – 56</td>
+                    <td class="py-2 px-4 border">U/L</td>
+                    <td class="py-2 px-4 border">Liver Enzyme Activity</td>
+                    </tr>
+                    <tr class="border-t">
+                    <td class="py-2 px-4 border">Albumin</td>
+                    <td class="py-2 px-4 border">3.4 – 5.4</td>
+                    <td class="py-2 px-4 border">g/dL</td>
+                    <td class="py-2 px-4 border">Protein Level</td>
+                    </tr>
+                    <tr class="border-t">
+                    <td class="py-2 px-4 border">HER2</td>
+                    <td class="py-2 px-4 border">&lt; 15</td>
+                    <td class="py-2 px-4 border">ng/mL</td>
+                    <td class="py-2 px-4 border">Breast Cancer Marker</td>
+                    </tr>
+                    <tr class="border-t">
+                    <td class="py-2 px-4 border">Glucose (Fasting)</td>
+                    <td class="py-2 px-4 border">70 – 99</td>
+                    <td class="py-2 px-4 border">mg/dL</td>
+                    <td class="py-2 px-4 border">Blood Sugar</td>
+                    </tr>
+                    <tr class="border-t">
+                    <td class="py-2 px-4 border">BMI</td>
+                    <td class="py-2 px-4 border">18.5 – 24.9</td>
+                    <td class="py-2 px-4 border">kg/m²</td>
+                    <td class="py-2 px-4 border">Healthy Weight</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 {% endblock content %}

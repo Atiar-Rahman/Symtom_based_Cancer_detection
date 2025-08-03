@@ -10,6 +10,8 @@ def Home(request):
     return render(request,'Home.html')
 def Knowledge(request):
     return render(request,'knowledge.html')
+def Contact(request):
+    return render(request,'contact.html')
 
 
 def Predict_Lung_Cancer(model,user_data):
