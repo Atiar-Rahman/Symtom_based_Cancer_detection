@@ -18,6 +18,8 @@ def Lung_blog(request):
     return render(request,'lung_blog.html')
 def Liver_blog(request):
     return render(request,'liver_blog.html')
+def BMI_Calculate(request):
+    return render(request,'Bmi.html')
 
 
 def Predict_Lung_Cancer(model,user_data):
