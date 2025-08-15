@@ -1,0 +1,169 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multi-Cancer Detection Tool</title>
+  <link rel="stylesheet" href="{% static 'css/output.css' %}">
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- Hero / About -->
+  <section class="bg-blue-50 py-16">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 space-y-6">
+        <h1 class="text-4xl font-bold text-blue-900">Symptom-Based Multi-Cancer Detection</h1>
+        <p class="text-lg text-gray-600">
+          A web-based tool to help identify potential risks of breast, lung, and liver cancer
+          based on symptoms. This is for awareness and educational purposes only.
+        </p>
+        <ul class="space-y-2">
+          <li class="flex items-center"><span class="text-blue-600 mr-2">✔</span> Symptom-based screening</li>
+          <li class="flex items-center"><span class="text-blue-600 mr-2">✔</span> Covers breast, lung & liver cancer</li>
+          <li class="flex items-center"><span class="text-blue-600 mr-2">✔</span> User-friendly interface</li>
+        </ul>
+      </div>
+      <div class="md:w-1/2 mt-10 md:mt-0">
+        <img src="{% static 'images/banner.png' %}" alt="Medical Illustration" class="rounded-lg shadow-lg" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Symptoms -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-blue-900 mb-6">Cancer Symptoms</h2>
+      <p class="text-gray-600 mb-10">Click on a symptom to learn more about its relevance.</p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <button class="bg-blue-100 p-4 rounded-lg hover:bg-blue-200">Persistent Cough</button>
+        <button class="bg-blue-100 p-4 rounded-lg hover:bg-blue-200">Unexplained Weight Loss</button>
+        <button class="bg-blue-100 p-4 rounded-lg hover:bg-blue-200">Lump in Breast</button>
+        <button class="bg-blue-100 p-4 rounded-lg hover:bg-blue-200">Fatigue</button>
+        <button class="bg-blue-100 p-4 rounded-lg hover:bg-blue-200">Shortness of Breath</button>
+        <button class="bg-blue-100 p-4 rounded-lg hover:bg-blue-200">Abdominal Pain</button>
+        <button class="bg-blue-100 p-4 rounded-lg hover:bg-blue-200">Skin Changes</button>
+        <button class="bg-blue-100 p-4 rounded-lg hover:bg-blue-200">Loss of Appetite</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Spread Info -->
+  <section class="bg-blue-50 py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-blue-900 mb-6">How Cancer Spreads & Risk Factors</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+          <h3 class="font-semibold text-xl mb-3">Genetic Factors</h3>
+          <p class="text-gray-600">Some cancers can be influenced by inherited genetic mutations.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+          <h3 class="font-semibold text-xl mb-3">Lifestyle Choices</h3>
+          <p class="text-gray-600">Smoking, alcohol, poor diet, and inactivity can increase risk.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+          <h3 class="font-semibold text-xl mb-3">Environmental Exposure</h3>
+          <p class="text-gray-600">Pollution, chemicals, and radiation can contribute to cancer risk.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Precautions -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-blue-900 mb-6">Prevention & Early Detection</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-blue-100 p-6 rounded-lg">
+          <h3 class="font-semibold text-lg mb-3">Things to Avoid</h3>
+          <ul class="list-disc text-left list-inside text-gray-600 space-y-2">
+            <li>Smoking</li>
+            <li>Excessive alcohol consumption</li>
+            <li>Exposure to carcinogens</li>
+          </ul>
+        </div>
+        <div class="bg-green-100 p-6 rounded-lg">
+          <h3 class="font-semibold text-lg mb-3">Things to Do</h3>
+          <ul class="list-disc text-left list-inside text-gray-600 space-y-2">
+            <li>Healthy diet & exercise</li>
+            <li>Regular medical check-ups</li>
+            <li>Vaccinations where applicable</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Message CTA -->
+  <section class="bg-blue-200 py-12 text-center">
+    <h2 class="text-2xl font-bold text-blue-900 mb-4">Any Advice From You?</h2>
+    <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Message Us</a>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold text-blue-900 mb-6 text-center">Frequently Asked Questions</h2>
+      <div class="space-y-4 max-w-2xl mx-auto">
+        <details class="border rounded-lg p-4">
+          <summary class="font-semibold cursor-pointer">What is the purpose of this tool?</summary>
+          <p class="mt-2 text-gray-600">It provides symptom-based awareness for multiple cancers.</p>
+        </details>
+        <details class="border rounded-lg p-4">
+          <summary class="font-semibold cursor-pointer">Is this a replacement for a doctor?</summary>
+          <p class="mt-2 text-gray-600">No, always seek professional medical advice.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section class="bg-blue-50 py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-blue-900 mb-6">Our Most Popular Blog</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <img src="{% static 'images/breast.jpeg' %}" class='w-full h-1/2' alt="Blog Image" />
+          <div class="p-6">
+            <h3 class="font-semibold text-lg mb-2">Understanding Breast Cancer Symptoms</h3>
+            <p class="text-gray-600 mb-4">Learn about early warning signs and detection methods.</p>
+            <a href="{% url 'breast' %}" class="text-blue-600 font-semibold">Read More</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <img src="{% static 'images/lung.jpeg' %}" class='w-full h-1/2' alt="Blog Image" />
+          <div class="p-6">
+            <h3 class="font-semibold text-lg mb-2">Lung Cancer Prevention Tips</h3>
+            <p class="text-gray-600 mb-4">Practical lifestyle changes to reduce your risk.</p>
+            <a href="{% url 'lung' %}" class="text-blue-600 font-semibold">Read More</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <img src="{% static 'images/liver.jpeg' %}" class='w-full h-1/2' alt="Blog Image" />
+          <div class="p-6">
+            <h3 class="font-semibold text-lg mb-2">Liver Cancer Prevention Tips</h3>
+            <p class="text-gray-600 mb-4">Practical lifestyle changes to reduce your risk.</p>
+            <a href="{% url 'liver' %}" class="text-blue-600 font-semibold">Read More</a>
+          </div>
+        </div>
+      </div>
+      <a href="{% url 'contact' %}" class="my-6 inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">More Detail Information Contact us</a>
+    </div>
+  
+  
+ 
+
+  <!-- Newsletter -->
+  <section class="bg-blue-200 py-8">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+      <h3 class="text-lg font-semibold">Subscribe to our newsletter</h3>
+      <div class="flex">
+        <input type="email" placeholder="Enter your email" class="p-3 rounded-l border w-64" />
+        <button class="bg-blue-600 text-white px-4 rounded-r hover:bg-blue-700">Subscribe</button>
+      </div>
+    </div>
+  </section>
+
+  {% include "footer.html" %}
+</body>
+</html>

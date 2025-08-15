@@ -1,17 +1,5 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cancer Prediction Tool</title>
-    <link rel="stylesheet" href="{% static 'css/output.css' %}" />
-</head>
-<body class='container mx-auto'>
-    {% include "navbar.html" %}
-    {% block content %} 
-    {% endblock content %}   
-    {% block footer %}
-    {% endblock footer %}
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block home_content %}
+{% include "home_content.html" %}
+{% endblock home_content %}

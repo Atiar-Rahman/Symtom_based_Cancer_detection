@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block blog %}
+<div>
+      <!-- Header -->
+    <header class="bg-green-700 text-white py-6 shadow">
+        <div class="max-w-6xl mx-auto px-4">
+            <h1 class="text-3xl font-bold">Liver Cancer Awareness Blog</h1>
+            <p class="mt-1 text-green-200">Learn, prevent, and stay informed about liver health</p>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-green-100 py-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-2xl md:text-4xl font-semibold mb-4">Understanding Liver Cancer</h2>
+            <p class="text-gray-700 text-lg md:text-xl max-w-3xl mx-auto">
+                Liver cancer is a serious disease, but early detection, awareness of risk factors, and healthy lifestyle choices can make a difference.
+            </p>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <main class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Main Article -->
+        <article class="md:col-span-2 space-y-6">
+            <h3 class="text-2xl font-bold text-green-800">What is Liver Cancer?</h3>
+            <p>
+                Liver cancer occurs when abnormal cells in the liver grow uncontrollably, forming a tumor. It can start in the liver (primary liver cancer) or spread from other organs (secondary liver cancer). Hepatocellular carcinoma (HCC) is the most common type.
+            </p>
+
+            <h3 class="text-2xl font-bold text-green-800">Early Signs and Symptoms</h3>
+            <p>
+                Early liver cancer often has no symptoms. When they appear, common signs include unexplained weight loss, loss of appetite, upper abdominal pain, jaundice (yellowing of skin and eyes), fatigue, and nausea. Regular check-ups are crucial for early detection.
+            </p>
+
+            <h3 class="text-2xl font-bold text-green-800">Risk Factors</h3>
+            <p>
+                Several factors increase the risk of liver cancer, including chronic hepatitis B or C infection, cirrhosis, heavy alcohol use, obesity, type 2 diabetes, and exposure to aflatoxins (toxins from moldy foods). Understanding your risk factors helps in prevention and monitoring.
+            </p>
+
+            <h3 class="text-2xl font-bold text-green-800">Prevention and Healthy Lifestyle</h3>
+            <p>
+                Preventive measures include getting vaccinated for hepatitis B, avoiding excessive alcohol, maintaining a healthy weight, eating a balanced diet, regular exercise, and limiting exposure to harmful chemicals. Early detection through liver function tests and imaging can save lives.
+            </p>
+
+            <h3 class="text-2xl font-bold text-green-800">Treatment Options</h3>
+            <p>
+                Treatment depends on the stage and type of liver cancer. Options include surgical removal, liver transplant, ablation therapy, embolization, targeted therapy, immunotherapy, and chemotherapy. Consulting a medical professional is essential to determine the best plan.
+            </p>
+
+            <h3 class="text-2xl font-bold text-green-800">Living with Liver Cancer</h3>
+            <p>
+                Support from healthcare providers, family, and community is important. Emotional health, diet management, and monitoring treatment side effects play a key role in maintaining quality of life during and after treatment.
+            </p>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="space-y-6 bg-white p-6 rounded-xl shadow">
+            <h3 class="text-xl font-bold text-green-700">Quick Tips</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>Get vaccinated for hepatitis B.</li>
+                <li>Limit alcohol and avoid smoking.</li>
+                <li>Maintain a healthy diet and exercise regularly.</li>
+                <li>Screen regularly if at high risk.</li>
+                <li>Consult a doctor if symptoms appear.</li>
+            </ul>
+
+            <h3 class="text-xl font-bold text-green-700">Resources</h3>
+            <ul class="space-y-2 text-gray-700">
+                <li><a href="#" class="text-green-800 hover:underline">American Cancer Society - Liver Cancer</a></li>
+                <li><a href="#" class="text-green-800 hover:underline">National Cancer Institute</a></li>
+                <li><a href="#" class="text-green-800 hover:underline">Liver Foundation Resources</a></li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-6 mt-12">
+        <div class="max-w-6xl mx-auto px-4 text-center text-gray-600">
+            &copy; 2025 Liver Cancer Awareness Blog. All rights reserved.
+        </div>
+    </footer>
+</div>
+{% endblock blog %}

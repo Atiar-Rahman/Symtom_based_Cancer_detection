@@ -12,6 +12,12 @@ def Knowledge(request):
     return render(request,'knowledge.html')
 def Contact(request):
     return render(request,'contact.html')
+def Breast_blog(request):
+    return render(request,'breast_blog.html')
+def Lung_blog(request):
+    return render(request,'lung_blog.html')
+def Liver_blog(request):
+    return render(request,'liver_blog.html')
 
 
 def Predict_Lung_Cancer(model,user_data):

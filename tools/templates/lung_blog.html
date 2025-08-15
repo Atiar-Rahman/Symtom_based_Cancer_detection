@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block blog %}
+ <div>
+     <!-- Header -->
+    <header class="bg-gray-800 text-white py-6 shadow">
+        <div class="max-w-6xl mx-auto px-4">
+            <h1 class="text-3xl font-bold">Lung Cancer Awareness Blog</h1>
+            <p class="mt-1 text-gray-300">Inform, educate, and empower through knowledge</p>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-200 py-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-2xl md:text-4xl font-semibold mb-4">Understanding Lung Cancer</h2>
+            <p class="text-gray-700 text-lg md:text-xl max-w-3xl mx-auto">
+                Learn about early signs, risk factors, prevention, and treatment options. Awareness is key to saving lives.
+            </p>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <main class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Main Article -->
+        <article class="md:col-span-2 space-y-6">
+            <h3 class="text-2xl font-bold text-gray-800">Early Signs and Symptoms</h3>
+            <p>
+                Lung cancer may not show noticeable symptoms in the early stages. Common signs include persistent cough, coughing up blood, chest pain, shortness of breath, unexplained weight loss, and fatigue. Early detection greatly improves treatment outcomes.
+            </p>
+
+            <h3 class="text-2xl font-bold text-gray-800">Risk Factors</h3>
+            <p>
+                Smoking is the leading cause of lung cancer, but non-smokers can also develop it due to secondhand smoke, air pollution, exposure to radon gas, asbestos, or genetic factors. Being aware of these risks can guide preventive actions.
+            </p>
+
+            <h3 class="text-2xl font-bold text-gray-800">Prevention Tips</h3>
+            <p>
+                Avoid smoking and exposure to secondhand smoke, maintain a healthy diet, exercise regularly, and test your home for radon. Lifestyle adjustments and regular medical checkups reduce the risk of developing lung cancer.
+            </p>
+
+            <h3 class="text-2xl font-bold text-gray-800">Treatment Options</h3>
+            <p>
+                Treatment depends on the type and stage of lung cancer. Options include surgery, radiation therapy, chemotherapy, targeted therapy, and immunotherapy. Consult with a medical professional to create an appropriate treatment plan.
+            </p>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="space-y-6 bg-white p-6 rounded-xl shadow">
+            <h3 class="text-xl font-bold text-gray-700">Quick Tips</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>Quit smoking and avoid secondhand smoke.</li>
+                <li>Exercise regularly and eat a balanced diet.</li>
+                <li>Be aware of radon exposure in your home.</li>
+                <li>Schedule regular checkups and screenings.</li>
+                <li>Stay informed and spread awareness.</li>
+            </ul>
+
+            <h3 class="text-xl font-bold text-gray-700">Resources</h3>
+            <ul class="space-y-2 text-gray-700">
+                <li><a href="#" class="text-gray-800 hover:text-gray-900 underline">American Lung Association</a></li>
+                <li><a href="#" class="text-gray-800 hover:text-gray-900 underline">National Cancer Institute</a></li>
+                <li><a href="#" class="text-gray-800 hover:text-gray-900 underline">Cancer Research UK</a></li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-6 mt-12">
+        <div class="max-w-6xl mx-auto px-4 text-center text-gray-600">
+            &copy; 2025 Lung Cancer Awareness Blog. All rights reserved.
+        </div>
+    </footer>
+ </div>
+{% endblock blog %}
