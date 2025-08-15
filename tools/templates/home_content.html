@@ -101,33 +101,58 @@
   </section>
 
   <!-- FAQ -->
-  <section class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-2xl font-bold text-blue-900 mb-6 text-center">Frequently Asked Questions</h2>
-      <div class="space-y-4 max-w-2xl mx-auto">
-        <details class="border rounded-lg p-4">
-          <summary class="font-semibold cursor-pointer">What is the purpose of this tool?</summary>
-          <p class="mt-2 text-gray-600">It provides symptom-based awareness for multiple cancers.</p>
-        </details>
-        <details class="border rounded-lg p-4">
-          <summary class="font-semibold cursor-pointer">Is this a replacement for a doctor?</summary>
-          <p class="mt-2 text-gray-600">No, always seek professional medical advice.</p>
-        </details>
-      </div>
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-2xl font-bold text-blue-900 mb-6 text-center">Frequently Asked Questions</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+
+      <details class="border rounded-lg p-4">
+        <summary class="font-semibold cursor-pointer">What is the purpose of this tool?</summary>
+        <p class="mt-2 text-gray-600">It provides symptom-based awareness for multiple cancers to encourage early medical consultation.</p>
+      </details>
+
+      <details class="border rounded-lg p-4">
+        <summary class="font-semibold cursor-pointer">Is this a replacement for a doctor?</summary>
+        <p class="mt-2 text-gray-600">No, this tool is for educational and awareness purposes only. Always seek professional medical advice.</p>
+      </details>
+
+      <details class="border rounded-lg p-4">
+        <summary class="font-semibold cursor-pointer">How accurate is the symptom detection?</summary>
+        <p class="mt-2 text-gray-600">The tool uses general symptom patterns and is not a diagnostic system. It is meant to raise awareness, not confirm a diagnosis.</p>
+      </details>
+
+      <details class="border rounded-lg p-4">
+        <summary class="font-semibold cursor-pointer">Which cancers are included in this tool?</summary>
+        <p class="mt-2 text-gray-600">It currently includes breast, lung, and liver cancer, with more types planned for future updates.</p>
+      </details>
+
+      <details class="border rounded-lg p-4">
+        <summary class="font-semibold cursor-pointer">Is my data stored or shared?</summary>
+        <p class="mt-2 text-gray-600">No, your input is processed locally for results and is not stored or shared with anyone.</p>
+      </details>
+
+      <details class="border rounded-lg p-4">
+        <summary class="font-semibold cursor-pointer">Can I use this tool on my phone?</summary>
+        <p class="mt-2 text-gray-600">Yes, the tool is mobile-friendly and works on most modern smartphones and tablets.</p>
+      </details>
+
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Blog -->
   <section class="bg-blue-50 py-16">
     <div class="container mx-auto px-4 text-center">
       <h2 class="text-3xl font-bold text-blue-900 mb-6">Our Most Popular Blog</h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="flex flex-col md:flex-row justify-center items-center gap-10">
         <div class="bg-white rounded-lg shadow overflow-hidden">
           <img src="{% static 'images/breast.jpeg' %}" class='w-full h-1/2' alt="Blog Image" />
           <div class="p-6">
-            <h3 class="font-semibold text-lg mb-2">Understanding Breast Cancer Symptoms</h3>
-            <p class="text-gray-600 mb-4">Learn about early warning signs and detection methods.</p>
-            <a href="{% url 'breast' %}" class="text-blue-600 font-semibold">Read More</a>
+            <h3 class="font-semibold text-lg mb-2">Breast Cancer Prevention Tips</h3>
+            <p class="text-gray-600 mb-4">Practical lifestyle changes to reduce your risk.</p>
+            <a href="{% url 'lung' %}" class="text-blue-600 font-semibold">Read More</a>
           </div>
         </div>
         <div class="bg-white rounded-lg shadow overflow-hidden">
@@ -155,7 +180,7 @@
 
   <!-- Newsletter -->
   <section class="bg-blue-200 py-8">
-    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-10">
       <h3 class="text-lg font-semibold">Subscribe to our newsletter</h3>
       <div class="flex">
         <input type="email" placeholder="Enter your email" class="p-3 rounded-l border w-64" />
