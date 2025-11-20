@@ -23,10 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-h5+znhk=a0o%182^-9q-t#1q2-*lj0qt8s^#2yui_24_2fktv%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
+DEBUG = False
+ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1']
 ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['https://*.onrender.com','http://127.0.0.1:8000']
+CSRF_TRUSTED_ORIGINS = ['https://*.onrender.com',"https://*.vercel.app",'http://127.0.0.1:8000']
 
 
 # Application definition
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'cancer_detection_tools.wsgi.application'
+WSGI_APPLICATION = 'cancer_detection_tools.wsgi.app'
 
 
 # Database
